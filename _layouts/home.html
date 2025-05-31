@@ -1,0 +1,140 @@
+---
+layout: default
+---
+
+<div class="home">
+
+	{{ content }}
+
+
+	{% if site.paginate %}
+		{% assign posts = paginator.posts %}
+	{% else %}
+		{% assign posts = site.posts %}
+	{% endif %}
+
+
+	{%- if posts.size > 0 -%}
+		{%- if page.list_title -%}
+			<h2 class="post-list-heading">{{ page.list_title }}</h2>
+		{%- endif -%}
+		<ul class="post-list">
+			{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+
+			{%- for post in posts -%}
+				{% if post.categories contains 'transmission' %}
+
+				{% else %}
+					<li>
+						<span class="post-meta">{{ post.date | date: date_format }}</span>:
+							<a class="post-link" href="{{ post.url | relative_url }}">
+								{{ post.title | escape }}
+							</a>
+						{%- if site.minima.show_excerpts -%}
+							{{ post.excerpt }}
+						{%- endif -%}
+					</li>
+				{%- endif -%}
+
+			{%- endfor -%}
+		</ul>
+
+		{% if site.paginate %}
+			<div class="pager">
+				<ul class="pagination">
+				{%- if paginator.previous_page %}
+					<li>
+						<a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page" title="Go to Page {{ paginator.previous_page }}">
+							{{ paginator.previous_page }}
+						</a>
+					</li>
+				{%- else %}
+					<li><div class="pager-edge">•</div></li>
+				{%- endif %}
+					<li><div class="current-page">{{ paginator.page }}</div></li>
+				{%- if paginator.next_page %}
+					<li>
+						<a href="{{ paginator.next_page_path | relative_url }}" class="next-page" title="Go to Page {{ paginator.next_page }}">
+							{{ paginator.next_page }}
+						</a>
+					</li>
+				{%- else %}
+					<li><div class="pager-edge">•</div></li>
+				{%- endif %}
+				</ul>
+			</div>
+		{%- endif %}
+	{%- endif -%}
+
+	<div>
+		<h2>
+			Project pages & downloads
+		</h2>
+		<ul>
+			<li>
+				Apps
+			</li>
+			<ul>
+				<li>
+					<a href="https://github.com/everloste/DatapackToolkit">Datapack Toolkit</a> - desktop app for easy editing of Minecraft datapacks
+				</li>
+				<li>
+					<a href="https://github.com/everloste/creatorclerk">Creator Clerk</a> - utility for downloading CurseForge and Modrinth creator stats 
+				</li>
+			</ul>
+			<li>
+				Minecraft mods
+			</li>
+			<ul>
+				<li>
+					<a href={{ site.curseforge_link }}>CurseForge</a>
+				</li>
+				<li>
+					<a href={{ site.modrinth_link }}>Modrinth</a>
+				</li>
+			</ul>
+			<li>
+				Other
+			</li>
+			<ul>
+				<li>
+					<a href="projects/tiniercode">Tiniercode</a> - a tiny, modern bitmap font tailored for low-res
+				</li>
+				<li>
+					<a href="projects/pixelserif">Pixelserif</a> - a fancy, Minecraft-inspired bitmap font
+				</li>
+			</ul>
+			<li style="color: #44394e;">
+				Secret...
+			</li>
+			<ul style="color: #44394e;">
+				<li>
+					TBA...!
+				</li>
+			</ul>
+		</ul>
+	</div>
+
+	<!--
+	<div class="transmission_list">
+		{%- if posts.size > 0 -%}
+			<h3>
+				Received transmissions
+			</h3>
+			<ul>
+			{%- for post in posts -%}
+				{% if post.categories contains 'transmission' %}
+					<li>
+						<span class="post-meta">{{ post.date | date: date_format }}</span>:
+							<a class="post-link" href="{{ post.url | relative_url }}">
+								{{ post.title | escape }}
+							</a>
+					</li>
+				{%- endif -%}
+			{%- endfor -%}
+			</ul>
+		{%- endif -%}
+	</div>
+	-->
+
+</div>
