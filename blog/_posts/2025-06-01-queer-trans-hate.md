@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "On the hatred toward queer people (and trans people especially) and what we should be doing about it"
+title: "On the hatred towards queer people (and trans people especially) and what we should be doing about it"
 date: 2025-06-01 16:00
 ---
 
-this is a post where i voice my view on the extreme rise in hatred toward queer people on the internet (as well as in real life)
+this is a post where i voice my view on the extreme rise in hatred towards queer people on the internet (as well as in real life)
 and what i think we should really be doing about it as the perhaps better side of the internet community.
 
 it's also my argument for why we maybe shouldn't be entertaining any more
@@ -53,7 +53,7 @@ these people are still a vital part of the vast undercurrent of extreme homophob
 the terrorist merely acted in the way he knew these people would love,
 and he admitted this.  
 his motivation came *primarily* from the support of his peers,
-and mainstream hatred toward the minorities.
+and mainstream hatred towards the minorities.
 the same, while many mainstream conservatives did pretend to condemn this act,
 they still immediately afterwards hijacked the opportunity to further try and demonise the victims of these terrorist attacks.
 
