@@ -13,6 +13,13 @@ so for now it's as basic as it gets :)
 
 i hope you like it here... <3
 
+## Quick links to my tools
+Are you looking for a Minecraft tool I made? There are multiple of them,
+and here they are:
+
+- [**Datapack Toolkit (Web)**](https://everloste.github.io/dptoolkit-web/) - a datapack configuration tool
+- [**Minecraft Project Search**](https://everloste.github.io/mc-project-search/) - a tool for searching Modrinth and CurseForge
+
 ## Blog posts
 
 <!--
