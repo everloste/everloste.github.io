@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+:root {
+	font-family: 'Fira Code', Courier, monospace;
+	color: gainsboro;
+	box-sizing: border-box;
+
+	--ease-out-perfect: cubic-bezier(0.25, 1, 0.25, 1);
+	--accent-color: #beabee;
+	--accent-color-darker: lch(from var(--accent-color) calc(l - 15) c calc(h - 5));
+	--accent-color-lighter: lch(from var(--accent-color) calc(l + 15) c calc(h + 5));
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	line-height: 1.35;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0.75em;
+	margin-bottom: 0.5em;
+}
+
+a {
+	transition: all 0.25s var(--ease-out-perfect);
+	font-weight: 700;
+	text-decoration: underline 0px transparent;
+	&:link, &:visited {
+		color: var(--accent-color);
+	}
+	&:hover {
+		text-decoration: underline 2px;
+		color: var(--accent-color-lighter);
+		font-weight: 900;
+	}
+}
+
+a.unformatted {
+	transition: none;
+	font-weight: inherit;
+	text-decoration: none;
+	color: inherit;
+	&:hover {
+		text-decoration: none;
+		color: inherit;
+		font-weight: inherit;
+	}
+}
+
+html, body {
+	max-width: 1024px; margin: auto;
+	font-size: 16px;
+	background-color: #181825;
+}
+
+body {
+	padding: 1em 2em;
+	background-color: #181825;
+	padding-bottom: 4em;
+}
+
+p {
+	margin-top: 1em;
+}
+
+.pronouns {
+	color: var(--accent-color);
+}
+
+hr {
+	border-top: 1px solid color-mix(in srgb, gainsboro, transparent 75%);
+	margin: 2em 0em;
+}
