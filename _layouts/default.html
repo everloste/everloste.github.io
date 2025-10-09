@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- META -->
+	<link rel="stylesheet" type="text/css" href={{ "assets/style.css" | absolute_url }}>
+	<meta charset="UTF-8"/>
+	<meta name="robots" content="nofollow">
+	<title>
+		{{ page.title }} &lowast; {{ site.title }}
+	</title>
+	{%- feed_meta -%}
+
+	<!-- WEBSITE HEADER TITLE -->
+	{%- if page.layout != "home" -%}
+		<p id="siteTitle">
+			{{ site.title }}
+			<text id="titleGreeting"></text>
+		</p>
+	{%- else %}
+		<h1 id="siteTitle">
+			{{ site.title }}
+			<text id="titleGreeting" style="font-size: 67%;"></text>
+		</h1>
+	{%- endif -%}
+
+	<!-- TITLE MODIFIER -->
+	<script>
+		let datetime = new Date();
+		const month = datetime.getMonth() + 1;
+		const date = datetime.getDate();
+
+		let greetings = [
+			{
+				month: 6,
+				day: -1,
+				greeting: "happy june! 🏳‍🌈 🏳️‍⚧️"
+			},
+			{
+				month: 12,
+				day: [21, 22, 23, 24, 25, 26],
+				greeting: "merry christmas! 🎄"
+			},
+			{
+				month: 1,
+				day: [1, 2, 3, 4, 5, 6, 7],
+				greeting: "happy new year! 🎉"
+			},
+			{
+				month: 9,
+				day: 20,
+				greeting: "happy red panda day! :3"
+			}
+		];
+
+		for (x of greetings) {
+			if (x.month == month && (x.day == date || x.day == -1 || x.day.includes(date))) {
+				document.getElementById("titleGreeting").innerHTML += "&lowast; " + x.greeting;
+			}
+		}
+	</script>
+</head>
+
+<body>
+	{{ content }}
+	<script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+</body>
+
+<footer>
+	<br>
+	<hr>
+	<p>
+		<!-- FOOTER -->
+		site web de Bee &lt;&#51;
+		<a href={{ "privacy" | absolute_url }} style="font-size: small;">
+			(Privacy)</a>
+		<a href={{ "socials" | absolute_url }} style="font-size: small;">
+			(Socials)</a>
+
+		<!-- SOCIAL LINKS -->
+		<br> my socials:  
+		<a href={{ site.bluesky_link }}>
+			Bluesky</a> &lowast; 
+		<a href={{ site.discord_link }}>
+			Discord server</a>
+
+		<!-- WEBSITE LINKS -->
+		<br> my pages:
+		<a href={{ site.github_link }}>
+			GitHub</a> &lowast;
+		<a href={{ site.curseforge_link }}>
+			CurseForge</a> &lowast;
+		<a href={{ site.modrinth_link }}>
+			Modrinth</a> &lowast;
+		<a href={{ site.pmc_link }}>
+			PMC</a><br>
+	</p>
+
+	<!-- HOME LINK -->
+	{%- if page.layout != "home" -%}
+		<a href={{ "index.html" | absolute_url }}>
+			<- go back to the home page
+		</a>
+	{%- endif -%}
+
+</footer>
+
+</html>
