@@ -88,3 +88,13 @@ hr {
 	border-top: 1px solid color-mix(in srgb, gainsboro, transparent 75%);
 	margin: 2em 0em;
 }
+
+button {
+	padding: 1em;
+	color: gainsboro;
+	background-color: var(--accent-color-darker);
+	&:hover {
+		background-color: var(--accent-color);
+		cursor: pointer;
+	}
+}

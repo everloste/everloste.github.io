@@ -13,7 +13,8 @@
 </svelte:head>
 
 <nav style="display: flex; justify-content: space-between;">
-	<Navbase /> <span>everloste.github.io</span>
+	<span>everloste.github.io</span>
+	<Navbase />
 </nav>
 
 {@render children?.()}
