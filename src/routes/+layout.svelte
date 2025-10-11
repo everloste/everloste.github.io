@@ -1,5 +1,6 @@
 <script>
 	import { fade } from 'svelte/transition';
+	import "$lib/styles/main.css";
 	export let data;
 </script>
 
