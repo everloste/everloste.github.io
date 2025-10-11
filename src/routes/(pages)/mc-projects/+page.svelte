@@ -13,7 +13,7 @@
 </p>
 
 <p>
-	fun fact: as of today, my projects have a total of <b>{data.total_downloads.toLocaleString("en-IE")}</b> downloads on CurseForge and Modrinth.
+	fun fact: as of today, my projects have a total of <b class="pronouns">{data.total_downloads.toLocaleString("en-IE")}</b> downloads on CurseForge and Modrinth.
 </p>
 
 <p>
