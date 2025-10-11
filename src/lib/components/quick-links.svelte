@@ -19,7 +19,7 @@
 			</p>
 		</div>
 	</a>
-	<a href="https://everloste.github.io/mc-project-search/" class="unformatted --quick-link-object">
+	<a href="https://github.com/everloste" class="unformatted --quick-link-object">
 		<div>
 			<h3>
 				GitHub
@@ -29,7 +29,7 @@
 			</p>
 		</div>
 	</a>
-	<a href="https://everloste.github.io/mc-project-search/" class="unformatted --quick-link-object">
+	<a href="https://www.curseforge.com/members/bebebea_loste/" class="unformatted --quick-link-object">
 		<div>
 			<h3>
 				CurseForge
@@ -39,7 +39,7 @@
 			</p>
 		</div>
 	</a>
-	<a href="https://everloste.github.io/mc-project-search/" class="unformatted --quick-link-object">
+	<a href="https://modrinth.com/user/bebebea_loste/" class="unformatted --quick-link-object">
 		<div>
 			<h3>
 				Modrinth
