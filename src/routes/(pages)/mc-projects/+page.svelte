@@ -56,6 +56,7 @@
 			background-size: cover;
 			background-position: 25% 25%;
 			filter: opacity(0.25) blur(0px);
+			transition: all 0.5s var(--ease-out-perfect);
 		}
 
 		&:hover {
