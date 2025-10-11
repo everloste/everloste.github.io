@@ -33,6 +33,30 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
+.pronouns {
+	background: linear-gradient(to right, #edd0ee, #beabee);
+	background-clip: text;
+	color: transparent;
+}
+
+h1 + p,
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p,
+p + p {
+	margin-top: 1em;
+}
+
+p + h2,
+p + h3,
+p + h4,
+p + h5,
+p + h6 {
+	margin-top: 1.5rem;
+}
+
 a {
 	transition: all 0.25s var(--ease-out-perfect);
 	font-weight: 700;
@@ -74,14 +98,6 @@ body {
 footer {
 	text-align: center;
 	margin: 2em 0;
-}
-
-p + p {
-	margin-top: 1em;
-}
-
-.pronouns {
-	color: var(--accent-color);
 }
 
 hr {

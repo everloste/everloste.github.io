@@ -35,7 +35,7 @@
 				CurseForge
 			</h3>
 			<p>
-				My CurseForge profile.
+				My CurseForge profile with my Minecraft projects.
 			</p>
 		</div>
 	</a>
@@ -45,7 +45,7 @@
 				Modrinth
 			</h3>
 			<p>
-				My Modrinth page.
+				My Modrinth page with my Minecraft projects.
 			</p>
 		</div>
 	</a>
