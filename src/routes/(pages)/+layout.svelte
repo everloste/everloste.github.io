@@ -13,7 +13,7 @@
 </svelte:head>
 
 <nav style="display: flex; justify-content: space-between;">
-	<span>everloste.github.io</span>
+	<span id="website-nametag">everloste.github.io</span>
 	<Navbase />
 </nav>
 
