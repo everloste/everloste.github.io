@@ -24,13 +24,13 @@
 		gap: 1em;
 		> a {
 			padding: 1em;
-			backdrop-filter: brightness(1.25);
+			background-color: var(--background-color-brighter);
 			transition: all 0.25s var(--ease-out-perfect);
 			border: solid 1px transparent;
 			width: 100%;
 			&:hover {
 				color: var(--accent-color);
-				backdrop-filter: brightness(1.5);
+				background-color: var(--background-color-brightest);
 				border: solid 1px var(--accent-color);
 			}
 		}
