@@ -112,10 +112,13 @@ hr {
 button {
 	padding: 1em;
 	color: gainsboro;
-	background-color: var(--accent-color-darker);
+	border: 1px solid transparent;
+	background-color: var(--background-color-brighter);
+	transition: all 0.25s var(--ease-out-perfect);
 	&:hover {
-		background-color: var(--accent-color);
+		background-color: var(--background-color-brightest);
 		cursor: pointer;
+		border: 1px solid var(--accent-color);
 	}
 }
 
