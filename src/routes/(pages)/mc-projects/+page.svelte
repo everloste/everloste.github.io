@@ -13,6 +13,10 @@
 </p>
 
 <p>
+	fun fact: as of today, my projects have a total of <b>{data.total_downloads.toLocaleString("en-IE")}</b> downloads on CurseForge and Modrinth.
+</p>
+
+<p>
 
 </p>
 
@@ -81,7 +85,7 @@
 				{project.description}
 			</p>
 			<p>
-				{project.downloads.toLocaleString("en-IE") + " downloads on Modrinth"}
+				<b>{project.downloads.toLocaleString("en-IE")}</b> downloads
 			</p>
 			<div>
 				<a href={project.link}>
@@ -89,9 +93,11 @@
 						Modrinth
 					</button>
 				</a>
-				<button>
-					CurseForge
-				</button>
+				<a href={project.cf_link}>
+					<button>
+						CurseForge
+					</button>
+				</a>
 			</div>
 		</div>
 	{/each}
