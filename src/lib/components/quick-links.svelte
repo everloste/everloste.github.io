@@ -61,7 +61,9 @@
 	}
 	.--quick-link-object {
 		padding: 1em;
-		backdrop-filter: brightness(1.25);
+		/* backdrop-filter: brightness(1.25); */
+		/* background-color: #1E1E2E; */
+		background-color: var(--background-color-brighter);
 		transition: all 0.25s var(--ease-out-perfect);
 		border: solid 1px transparent;
 		flex: 1;
@@ -73,7 +75,9 @@
 		&:hover {
 			color: var(--accent-color);
 			flex: 1.25;
-			backdrop-filter: brightness(1.5);
+			/* backdrop-filter: brightness(1.5); */
+			/* background-color: #242437; */
+			background-color: var(--background-color-brightest);
 			border: solid 1px var(--accent-color);
 			max-width: 40em;
 		}

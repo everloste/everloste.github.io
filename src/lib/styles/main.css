@@ -9,6 +9,10 @@
 	--accent-color: #beabee;
 	--accent-color-darker: lch(from var(--accent-color) calc(l - 15) c calc(h - 5));
 	--accent-color-lighter: lch(from var(--accent-color) calc(l + 15) c calc(h + 5));
+
+	--background-color: #181825;
+	--background-color-brighter: rgb(from var(--background-color) calc(r * 1.25) calc(g * 1.25) calc(b * 1.25));
+	--background-color-brightest: rgb(from var(--background-color) calc(r * 1.5) calc(g * 1.5) calc(b * 1.5));
 }
 
 * {
@@ -86,12 +90,12 @@ a.unformatted {
 html, body {
 	max-width: 1024px; margin: auto;
 	font-size: 16px;
-	background-color: #181825;
+	background-color: var(--background-color);
 }
 
 body {
 	padding: 1em 2em;
-	background-color: #181825;
+	background-color: var(--background-color);
 	padding-bottom: 4em;
 }
 
