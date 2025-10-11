@@ -4,6 +4,18 @@
 
 <h1>&gt; minecraft projects</h1>
 
+<p>
+	this is a list of all my released Minecraft projects,
+	including mods, data packs, and resource packs.
+	if you like my work,
+	please do consider <a href="/ko-fi">supporting me</a>
+	to make this ever so slightly more feasible to do in the long term.
+</p>
+
+<p>
+
+</p>
+
 <style>
 	#project-list {
 		display: flex;
@@ -68,7 +80,7 @@
 				{project.description}
 			</p>
 			<p>
-				{project.downloads.toLocaleString() + " downloads on Modrinth"}
+				{project.downloads.toLocaleString("en-IE") + " downloads on Modrinth"}
 			</p>
 			<div>
 				<a href={project.link}>

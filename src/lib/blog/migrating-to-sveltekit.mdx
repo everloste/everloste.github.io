@@ -1,0 +1,89 @@
+---
+title: "Migrating from Jekyll to SvelteKit"
+date: "2025-10-10"
+---
+
+welcome to my new website! again! if you’re keeping score, this is my third personal website project.
+however, unlike the last two, which were built with [Jekyll](https://jekyllrb.com/), this one uses [SvelteKit](https://svelte.dev/docs/kit).
+
+why did i migrate from Jekyll? on paper at least, i had no need.
+Jekyll was created for blog-like sites, which is what mine ultimately is,
+and when you're creating a new blog,
+Jekyll gets you running way, way faster than SvelteKit here did.
+i haven't really migrated from the blog-like website model at all,
+and i've little intention of making this into an overly complicated web app.
+
+but Jekyll bugged me. first off, it's made in [Ruby](https://www.ruby-lang.org/en/), a language i'm not particularly familiar with,
+and second off, that meant a more complicated setup.
+that was already a bit *ughh* on Windows, which i was using when i created both my first and second sites,
+but then i made the millionth (but final!) switch to Linux (and Arch even, which i have learned has a way more bothersome app installation process than Ubuntu).
+honestly, at that point i had no motivation to even look up the installation process of Ruby -
+yes, i know i could probably get it done in a couple of minutes, but i'm lazy.
+Jekyll meant more steps, and they were not steps i felt like were worth it.
+
+and besides, i wanted a framework i could actually play around with, so unlike Jekyll.
+enter *The Search Process*.
+
+### Picking a framework
+
+by this point in time i was already pretty familiar with process of creating a web app using TypeScript and Vite,
+thanks to the work on the new web version of Datapack Toolkit and later my Minecraft project search.
+
+the first framework i tried was [Astro](https://astro.build/).
+it seemed good - it was already used by a person i get a ton of my inspiration from,
+it could be easily used for blogs,
+it was supposedly fast,
+and other good stuff.
+however, immediately,
+it felt a bit heavy, and more importantly, it didn't seem to work.
+the guided setup process crashed on me multiple times, and after selecting the right options to not make it crash,
+the template website didn't seem to render correctly in the browser.
+i'm pretty sure i could have made it work if i wanted to,
+but honestly, after what felt like a circus of a setup process, i was not in the mood.
+if i could use a different, simpler framework, that did work correctly at setup,
+then i would.
+
+there were other options, but the majority felt far too heavy for my use, or just too heavy in general.
+i could have tried something React-based, but i did not want to use React or any other particularly heavy (or old, honestly) UI library.
+
+the others on the other hand, such as [11nty](https://www.11ty.dev/), felt way too simple.
+i wanted something that i could code to do precisely what i want it to,
+i did not want it to be pre-made for blogs.
+knowing how difficult it can be to customise something pre-made,
+i knew i wanted to build the blog functionality myself.
+
+SvelteKit came up mostly by chance, as i didn't learn about it by just googling whatever's most popular.
+i tried Svelte's tutorial, and after liking it quite a bit, i decided to give SvelteKit a shot.
+
+it checked all my boxes. it could be used for static site generation (but did not have to be),
+it was based on Vite, which i was already familiar with,
+and the setup process was extremely simple.
+it was also lightweight, and supposedly had much better performance than the big UI frameworks.
+it was precisely what i wanted.
+
+### Building the blog
+
+building the base blog functionality with SvelteKit was significantly more work than with Jekyll,
+especially since i was not familiar with it yet at all.
+i followed [this tutorial](https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog),
+which i can recommend,
+and it taught me the basics of how SvelteKit works.
+
+as i'm writing this, i am not yet fully familiarised with SvelteKit and its processes,
+but i can say that i like it so far.
+building the blog from scratch allows me to customise precisely how everything works,
+including customising post metadata in a way i'm familiar with (so, in code,
+as opposed to what Jekyll does, with config files, etc).
+there's also no sorcery such as [blog themes](https://jekyllrb.com/docs/themes/),
+which just mysteriously *do* stuff - instead, i can use any UI library i want, though,
+right now, i'm just using plain Svelte components and vanilla CSS,
+and i intend to keep it that way.
+
+it feels way less like a black box this way,
+and i know exactly why things are the way they are,
+and that's how i like it.
+
+as of writing this, i'm still building this site.
+if you're anything like me,
+and you're looking to make a site like this of your own,
+i can recommend SvelteKit.

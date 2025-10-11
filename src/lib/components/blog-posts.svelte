@@ -5,11 +5,12 @@
 <div>
 	{#each data.posts as post}
 		<a href={post.path} class="unformatted">
-			<b>
-				{post.meta.title}
-			</b>
-			<br>
-			Published {new Date(post.meta.date).toLocaleDateString()}
+			<p>
+				<b>{post.meta.title}</b>
+			</p>
+			<p style="text-align: right;">
+				{new Date(post.meta.date).toLocaleDateString("en-IE", {weekday: "long", year: "numeric", month: "short", day: "2-digit",})}
+			</p>
 		</a>
 	{/each}
 </div>
