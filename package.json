@@ -21,6 +21,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"mdsvex": "^0.12.6"
+		"mdsvex": "^0.12.6",
+		"mdsvex-relative-images": "^2.0.0"
 	}
 }
