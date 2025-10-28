@@ -72,6 +72,10 @@
 		h3 {
 			margin: 0;
 		}
+		p {
+			margin: 0;
+			margin-top: 0.25em;
+		}
 		&:hover {
 			color: var(--accent-color);
 			flex: 1.25;
