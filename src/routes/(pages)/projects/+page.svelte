@@ -81,6 +81,22 @@
 	<div class="project-div">
 		<div class="project-text">
 			<h2>
+				Synced Lyrics Player
+			</h2>
+			<p>
+				a small, experimental, but pretty web app that plays your music with synchronised lyrics!
+			</p>
+			<p>
+				uses Vite, TypeScript, Svelte, and otherwise vanilla CSS.
+				it loads any audio file and tries to fetch synced lyrics from lrclib.net.
+				you can <a href="https://everloste.github.io/synced-lyrics-player/">try it out here!</a>
+			</p>
+		</div>
+		<img alt="A screenshot of the Synced Lyrics Player web app." src="https://everloste.github.io/synced-lyrics-player/preview.webp"/>
+	</div>
+	<div class="project-div">
+		<div class="project-text">
+			<h2>
 				Datapack Toolkit Python Edition
 			</h2>
 			<p>
