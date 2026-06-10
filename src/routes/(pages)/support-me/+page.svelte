@@ -1,6 +1,7 @@
 <script>
     import KofiButton from "$lib/components/kofi-button.svelte";
     import PaypalButton from "$lib/components/paypal-button.svelte";
+    import MyName from "$lib/components/snippets/my-name.svelte";
 </script>
 
 <h1>> support me</h1>
@@ -37,7 +38,7 @@
 </p>
 
 <p>
-	- Bee
+	- <MyName/>
 </p>
 
 <style>
