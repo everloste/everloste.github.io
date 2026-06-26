@@ -4,7 +4,7 @@
     import MyName from "$lib/components/snippets/my-name.svelte";
 </script>
 
-<h1>> support me</h1>
+<h1>support me</h1>
 
 <p>
 	i am a fully independent developer and artist, and at this moment, i rely on internet income entirely.

@@ -5,7 +5,7 @@
 	import old_dptoolkit_screenshot from "$lib/assets/old-dptoolkit.png";
 </script>
 
-<h1>&gt; my projects</h1>
+<h1>my projects</h1>
 
 <p>
 	here's a non-exhaustive list of my personal software projects!

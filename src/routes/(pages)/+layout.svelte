@@ -12,9 +12,21 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<nav style="display: flex; justify-content: space-between;">
-	<span id="website-nametag">everloste.github.io</span>
+<nav>
+	<span id="website-nametag"><a href="/">everloste.github.io</a></span>
 	<Navbase />
 </nav>
 
 {@render children?.()}
+
+<style>
+	nav {
+		display: flex;
+		justify-content: space-between;
+	}
+	@media screen and (max-width: 640px) {
+		nav {
+			flex-direction: column;
+		}
+	}
+</style>

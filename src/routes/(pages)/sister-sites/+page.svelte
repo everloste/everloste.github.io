@@ -1,4 +1,4 @@
-<h1>> sister sites</h1>
+<h1>sister sites</h1>
 
 <p>
 	these are the websites of folks i know

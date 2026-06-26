@@ -2,7 +2,7 @@
 	export let data;
 </script>
 
-<h1>&gt; minecraft projects</h1>
+<h1>minecraft projects</h1>
 
 <p>
 	this is a list of all my released Minecraft projects,

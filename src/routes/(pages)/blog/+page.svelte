@@ -3,6 +3,6 @@
 	export let data;
 </script>
 
-<h1>&gt; blog</h1>
+<h1>writing</h1>
 
-<BlogPosts data={data}/>
+<BlogPosts data={data} tagfilter=""/>
